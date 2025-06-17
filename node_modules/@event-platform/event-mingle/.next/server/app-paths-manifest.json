@@ -1,7 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/calendar/page": "app/calendar/page.js",
-  "/discover/page": "app/discover/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/chat/page": "app/chat/page.js"
-}
