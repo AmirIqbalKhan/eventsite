@@ -51,9 +51,6 @@ export default function Navigation() {
 
         {/* Right Side */}
         <div className="flex items-center gap-2 ml-auto z-20">
-          <button className="text-white/70 hover:text-white text-xl transition-colors p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white/20">
-            <span role="img" aria-label="Notifications">🔔</span>
-          </button>
           <Link href="/signup" className="border border-white/40 text-white/90 font-semibold px-5 py-2 rounded-full hover:bg-white/20 transition-colors duration-200">
             Sign Up
           </Link>
