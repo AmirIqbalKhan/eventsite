@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen px-2 sm:px-4">
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center mb-8">
         <div className="relative z-10 festival-container pt-32 text-center">

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function ChatPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen px-2 sm:px-4">
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center mb-8">
         <div className="relative z-10 text-center px-4 pt-32">
@@ -16,11 +16,11 @@ export default function ChatPage() {
 
       {/* Chat Interface */}
       <section className="festival-section relative">
-        <div className="festival-container flex justify-center relative z-40">
-          <div className="glass-effect rounded-2xl overflow-hidden p-0 max-w-5xl w-full min-h-[600px]">
-            <div className="grid grid-cols-12 h-[600px]">
+        <div className="festival-container flex flex-col lg:flex-row justify-center relative z-40">
+          <div className="glass-effect rounded-2xl overflow-hidden p-0 max-w-5xl w-full min-h-[400px] lg:min-h-[600px]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 h-[400px] lg:h-[600px]">
               {/* Chat List */}
-              <div className="col-span-4 border-r border-white/10 bg-white/5">
+              <div className="col-span-1 lg:col-span-4 border-r border-white/10 bg-white/5">
                 <div className="p-4 border-b border-white/10">
                   <input
                     type="text"
@@ -51,7 +51,7 @@ export default function ChatPage() {
               </div>
 
               {/* Chat Window */}
-              <div className="col-span-8 flex flex-col bg-white/5">
+              <div className="col-span-1 lg:col-span-8 flex flex-col bg-white/5">
                 {/* Chat Header */}
                 <div className="p-4 border-b border-white/10 flex items-center space-x-3">
                   <div className="w-10 h-10 bg-white/10 rounded-full"></div>

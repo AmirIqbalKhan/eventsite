@@ -21,7 +21,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center pointer-events-none transition-all duration-700">
       <div
         className={
-          'pointer-events-auto shadow-xl border border-white/10 transition-all duration-700 transition-colors transition-shadow rounded-full mt-4 mx-auto max-w-4xl w-[95%] flex items-center px-4 py-2 h-16 ' +
+          'pointer-events-auto shadow-xl border border-white/10 transition-all duration-700 transition-colors transition-shadow rounded-full mt-4 mx-auto max-w-4xl w-[98%] sm:w-[95%] flex items-center px-2 sm:px-4 py-2 h-16 ' +
           (scrolled ? 'bg-white/5 backdrop-blur-2xl' : 'bg-white/10 backdrop-blur-2xl')
         }
         style={{ position: 'relative' }}
@@ -54,9 +54,9 @@ export default function Navigation() {
           <button className="text-white/70 hover:text-white text-xl transition-colors p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white/20">
             <span role="img" aria-label="Notifications">🔔</span>
           </button>
-          <button className="border border-white/40 text-white/90 font-semibold px-5 py-2 rounded-full hover:bg-white/20 transition-colors duration-200">
-            Sign In
-          </button>
+          <Link href="/signup" className="border border-white/40 text-white/90 font-semibold px-5 py-2 rounded-full hover:bg-white/20 transition-colors duration-200">
+            Sign Up
+          </Link>
           {/* Hamburger for mobile */}
           <button
             className="md:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/20 transition"
@@ -88,9 +88,9 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <button className="border border-white/40 text-white/90 font-semibold px-5 py-2 rounded-full hover:bg-white/20 transition-colors duration-200 mt-2">
-                Sign In
-              </button>
+              <Link href="/signup" className="border border-white/40 text-white/90 font-semibold px-5 py-2 rounded-full hover:bg-white/20 transition-colors duration-200 mt-2">
+                Sign Up
+              </Link>
             </div>
           </div>
         )}

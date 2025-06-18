@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen px-2 sm:px-4">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center section-blend-fade">
         <div className="absolute inset-0 hero-bg"></div>

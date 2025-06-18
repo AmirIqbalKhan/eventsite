@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function CalendarPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen px-2 sm:px-4">
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="relative z-10 text-center px-4 pt-32">
